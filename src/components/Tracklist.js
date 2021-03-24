@@ -18,7 +18,7 @@ const Tracklist = () => {
   }
   useEffect(() => {
     fetchData()
-  }, [])
+  })
   if(loading) {
     return <section className="section section-center">
       <h2>Loading...</h2>
