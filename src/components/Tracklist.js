@@ -46,16 +46,16 @@ const Tracklist = () => {
               {verified ? tracklist :
               `Sharing is caring...
 
-              Um die Tracklist zu diesem Set zu bekommen folge bitte
-              @abyss_hamburg und
+              to get the tracklist please follow
+              @abyss_hamburg and
               @${sc_profile}
               
-              und gib dem Set ein like 👍
+              and like the set 👍
               
-              Klicke hierzu auf folgenden Link, um dich mit deinem SoundCloud Konto zu verbinden, alles weitere passiert dann automatisch.
+              To do so or to verify, that you already did, please connect with your SoundCloud profile.
               `}
             </p>
-            {verified ?? <img src={sc_button}/>}
+            {verified ?? <img src={sc_button} alt="Connect with soundcloud"/>}
           </div>
         </article>
       </div>
