@@ -7,18 +7,18 @@ const Tracklist = () => {
   const [tracklistObject,setTracklistObject] = useState(null)
   const {id} = useParams()
 
-  const fetchData = async () => {
-    try {
-      const {data} = await axios.get(`/api/tracklists?id=${id}`)
-      setTracklistObject(data)
-    } catch (error) {
-      console.log(error)
-    }
-    setLoading(false)
-  }
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const {data} = await axios.get(`/api/tracklists?id=${id}`)
+        setTracklistObject(data)
+      } catch (error) {
+        console.log(error)
+      }
+      setLoading(false)
+    }
     fetchData()
-  })
+  }, [id])
   if(loading) {
     return <section className="section section-center">
       <h2>Loading...</h2>
