@@ -8,6 +8,7 @@ Variables
 :root {
   --clr-primary-1: #c60;
   --clr-primary-2: #f90;
+  --clr-secondary: hsl(210, 31%, 80%);
   --clr-background: #333;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -42,7 +43,7 @@ ul {
 }
 a {
   text-decoration: none;
-}
+},
 h1,
 h2,
 h3,
@@ -70,7 +71,7 @@ h5 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-text);
+  color: var(--clr-secondary);
 }
 @media screen and (min-width: 800px) {
   h1 {
