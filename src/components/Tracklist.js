@@ -55,7 +55,7 @@ const Tracklist = () => {
               Klicke hierzu auf folgenden Link, um dich mit deinem SoundCloud Konto zu verbinden, alles weitere passiert dann automatisch.
               `}
             </p>
-            <img src={sc_button}/>
+            {verified ?? <img src={sc_button}/>}
           </div>
         </article>
       </div>
